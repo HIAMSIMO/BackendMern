@@ -17,7 +17,7 @@ app.use((req, res, next) =>{
 })
 
 //routes
-app.use(bookRoute)
+app.use('/api/books',bookRoute)
 
 //connect to DB
 mongoose.connect(process.env.MONG_URL)
